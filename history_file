@@ -1,0 +1,161 @@
+    1  git clone https://github.com/wolfcms/wolfcms-docker.git
+    2  cd wolfcms-docker/
+    3  ls
+    4  docker build
+    5  docker build .
+    6  docker ps
+    7  docker images ls
+    8  docker images list
+    9  docker 
+   10  docker images
+   11  8
+   12  docker ps
+   13  curl localhost
+   14  docker rm  ea5c75c8100e
+   15  docker rm -f ea5c75c8100e
+   16  history
+   17  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   18  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+   19  uname
+   20  cat /etc/*reales
+   21  cat /etc/*realese
+   22  cat /etc/realse*
+   23  cat /etc/release*
+   24  cat /etc/*release*
+   25  apt-cache policy docker-ce
+   26  apt update
+   27  apt install docker-ce
+   28  docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.5.2
+   29  docker -d run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.5.2
+   30  docker run  -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.5.2
+   31  netstat -anltp
+   32  docker ls
+   33  docker list
+   34  docker ps
+   35  docker logs 4845f512a95d
+   36  docker logs -f 4845f512a95d
+   37  docker logs  4845f512a95d
+   38  docker logs -f 4845f512a95d
+   39  docker ps
+   40  docker exec -it 13db3e79d04a
+   41  docker exec -it 13db3e79d04a bash
+   42  docker rm -f 13db3e79d04a
+   43  mysql -uroot
+   44  mysql -uroot -h 192.168.1.103 -p
+   45  docker images
+   46  docker run -d -p 8080:80 61c546545ec6
+   47  docker exec -it 17be58261dc64b9324568081aa308523478f45ec0f4f56616f81b2312a267596 bash
+   48  docker run -d -p 3306:3306 mysql
+   49  docker ps
+   50  docker run -d -p 3306:3306 mysql
+   51  docker ps
+   52  docker ps -a
+   53  docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=toor -d mysql
+   54  docker ps
+   55  docker rm -f 7c2fbdcd32f2
+   56  docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=toor -d mysql -p 3306:3306
+   57  netstat -antlp
+   58  docker ps
+   59  docker run -p 3306:3306 --name some-mysql -e MYSQL_ROOT_PASSWORD=toor -d mysql 
+   60  docker run -p 3306:3306 --name server-mysql -e MYSQL_ROOT_PASSWORD=toor -d mysql 
+   61  docker ps
+   62  netstat -antlp
+   63  docker exec -it 17be58261dc64b9324568081aa308523478f45ec0f4f56616f81b2312a267596 bash
+   64  apt install mysql-client
+   65  mysql -h 192.168.1.103 -uroot -p
+   66  docker ps
+   67  docker rm -f 17be58261dc6
+   68  docker run -d -p 8080:80 61c546545ec6
+   69  docker exec -it 13db3e79d04ae960a1fd81401b245ca7204c6c344cdf032e9965cb3ce2d01986 bash
+   70  docker restart 13db3e79d04ae960a1fd81401b245ca7204c6c344cdf032e9965cb3ce2d01986 
+   71  mysql -h 192.168.1.103 -uroot -p
+   72  docker 61c546545ec6
+   73  docker ps
+   74  docker exec -it 6c3f2db929dd bash
+   75  docker rm -f 6c3f2db929dd
+   76  docker run -d -p 8080:80 61c546545ec6
+   77  docker exec -it cf743e6091cdc54c5a32837dc9643ec223732eeabfa7d71d5b9e10c440738d4e bash
+   78  docker ps
+   79  docker restart cf743e6091cd
+   80  docker exec -it cf743e6091cdc54c5a32837dc9643ec223732eeabfa7d71d5b9e10c440738d4e bash
+   81  docker restart cf743e6091cd
+   82  docker stop cf743e6091cd
+   83  docker restart cf743e6091cd
+   84  docker exec -it cf743e6091cdc54c5a32837dc9643ec223732eeabfa7d71d5b9e10c440738d4e bash
+   85  mkdir jenkins
+   86  docker run -p 8080:8080 -v ./jenkins:/var/jenkins_home jenkins
+   87  ping 8.8.8.8
+   88  ping google.com
+   89  docker run -p 8080:8080 -v ./jenkins:/var/jenkins_home jenkins
+   90  docker pull jenkins
+   91  docker pull jenkins/jenkins:lts-jdk11
+   92  docker run -p 8080:8080 -v ./jenkins:/var/jenkins_home jenkins:2.60.3
+   93  docker ps
+   94  ls -l
+   95  chown 1000 jenkins
+   96  ls -l
+   97  docker run -p 8080:8080 -v ~/jenkins:/var/jenkins_home jenkins:2.60.3
+   98  cat /etc/passwd
+   99  docker run -p 8080:8080 -v ~/jenkins:/var/jenkins_home jenkins:2.60.3
+  100  ls jenkins/
+  101  exit
+  102  echo https://0a40008504776ebdc07c8852007100ef.web-security-academy.net/ > alive.txt
+  103  ./script.sh 
+  104  ./script.sh alive.txt 
+  105  cat Jsscanner_results/
+  106  cat Jsscanner_results/js/0a40008504776ebdc07c8852007100ef.web-security-academy.net-https/raw.txt 
+  107  cd Jsscanner_results/js/0a40008504776ebdc07c8852007100ef.web-security-academy.net-https
+  108  ls
+  109  grep admin *
+  110  cat raw.txt 
+  111  ls
+  112  cat jslinks.txt 
+  113  cat linkfinder.txt 
+  114  exit
+  115  apt install git
+  116  git config user.name zozosolo
+  117  git --version
+  118  git clone https://github.com/SrourGanoush/pet-clinic.git
+  119  cd pet-clinic/
+  120  git config user.name zozosolo
+  121  git config user.email zozo_solo@yahoo.com
+  122  git touch dd
+  123  touch ss
+  124  git add dd
+  125  git add ss
+  126  git commit -m "aaa
+"
+  127  git push
+  128  cd ..
+  129  rm -f pet-clinic
+  130  rm -Rf pet-clinic
+  131  git clone https://github.com/sorourssg/pet-clinic.git
+  132  touch dd
+  133  git add dd
+  134  cd pet-clinic/
+  135  touch dd
+  136  git add dd
+  137  git commit -m "ddd"
+  138  git config user.name zozosolo
+  139  git config user.email zozo_solo@yahoo.com
+  140  git commit -m "ddd"
+  141  git push
+  142  touch newfile
+  143  git add newfile
+  144  git commit -m "new file added"
+  145  apt install hub
+  146  hub pull-request
+  147  hub pull-request -h main
+  148  git push
+  149  hub pull-request -h main
+  150  touch newfile2
+  151  git add newfile2
+  152  git push
+  153  git commit -m "new file 2 added"
+  154  git push
+  155  hub pull-request -h main
+  156  git remote -v
+  157  hub pull-request "Make generator scripts output data in the new format" -b "srourganoush/pet-clinic.git" -h "sorourssg/pet-clinic.git"
+  158  hub pull-request "Make generator scripts output data in the new format" -b "srourganoush/pet-clinic:main" -h "sorourssg/pet-clinic:main"
+  159  history 
+  160  history > history_file
